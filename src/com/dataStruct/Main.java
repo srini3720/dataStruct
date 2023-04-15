@@ -1,5 +1,6 @@
 package com.dataStruct;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import com.dataStruct.ArrayStruct;
 
@@ -16,6 +17,16 @@ public class Main {
             //reverse Method
             int[] reverse = arrayStruct.reverse(rollArray);
             System.out.println("Reverse Array :"+Arrays.toString(reverse));
+
+
+            //ArrayList
+            ArrayList<Integer> rollList = new ArrayList<Integer>(Arrays.asList(12,45,78,98,65,12,65,4));
+            System.out.println("Current  Arraylist :"+rollList.toString());
+
+            ArrayList reverseList = arrayStruct.arrListreverse(rollList);
+
+            // reverse arrayList
+            System.out.println("Reversed Arraylist :"+reverseList.toString());
 
 
         }
